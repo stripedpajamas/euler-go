@@ -8,6 +8,7 @@ func main() {
 	Problem1()
 	Problem2()
 	Problem3()
+	Problem4()
 }
 
 func Problem1() {
@@ -26,4 +27,11 @@ func Problem3() {
 	n := 600851475143
 	p := LargestPrimeFactor(n)
 	fmt.Printf("Problem 3:\n\tLargest prime factor of %d is %d\n", n, p)
+}
+
+func Problem4() {
+	upper := 999
+	lower := 100
+	p := PalindromeProduct(upper, lower)
+	fmt.Printf("Problem 4:\n\tLargest palindromic product of two 3-digit numbers: %d\n", p)
 }
